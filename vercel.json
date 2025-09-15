@@ -6,6 +6,9 @@
     }
   ],
   "routes": [
+    { "src": "/firebase.js", "dest": "/firebase.js" },
+    { "src": "/script.js", "dest": "/script.js" },
     { "src": "/(.*)", "dest": "/index.html" }
-  ]
+]   
+
 }
