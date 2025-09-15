@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "echo 'No build needed for HTML/JS'",
     "preview": "vite preview"
   },
   "dependencies": {
