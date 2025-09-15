@@ -1,14 +1,17 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "**/*.html",
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
       "use": "@vercel/static"
     }
   ],
   "routes": [
-    { "src": "/firebase.js", "dest": "/firebase.js" },
-    { "src": "/script.js", "dest": "/script.js" },
+    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
-]   
-
+  ]
 }
